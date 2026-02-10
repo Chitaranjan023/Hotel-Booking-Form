@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Signature | Premium Luxury Stay</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <nav>
+    <h2>HOTEL SIGNATURE</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+   <section class="hero">
+    <div>
+      <h1>WELCOME TO <span>HOTEL SIGNATURE</span></h1>
+      <p>A premium luxury destination where elegance meets world-class hospitality.</p>
+    </div>
+  </section>
+
+   <section class="booking" id="booking">
+    <h3>Reserve Your Luxury Stay</h3>
+
+    <form id="bookingForm">
+      <div>
+        <label>Check-in</label>
+        <input type="date" id="checkin" required>
+      </div>
+
+      <div>
+        <label>Check-out</label>
+        <input type="date" id="checkout" required>
+      </div>
+
+      <div>
+        <label>Room Type</label>
+        <select required>
+          <option>Single</option>
+          <option>Double</option>
+          <option>Deluxe</option>
+          <option>Suite</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Guests</label>
+        <input type="number" min="1" max="6" required>
+      </div>
+
+      <div>
+        <label>Name</label>
+        <input type="text" required>
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" required>
+      </div>
+
+      <div>
+        <label>Special Requests</label>
+        <textarea rows="4"></textarea>
+      </div>
+
+      <button class="btn">Book Now</button>
+    </form>
+
+    <div class="success" id="successMsg">
+      ✨ Booking request sent successfully!
+    </div>
+  </section>
+
+  <section class="rooms" id="rooms">
+    <h2>Our Luxury Rooms</h2>
+
+    <div class="room-grid">
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+        <div class="room-content">
+          <h4>Deluxe Room</h4>
+          <div class="price">₹6,999 / night</div>
+          <p>Elegant interiors with premium comfort.</p>
+        </div>
+      </div>
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+        <div class="room-content">
+          <h4>Suite Room</h4>
+          <div class="price">₹11,999 / night</div>
+          <p>Spacious luxury with city views.</p>
+        </div>
+      </div>
+
+      <div class="room">
+        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+        <div class="room-content">
+          <h4>Presidential Suite</h4>
+          <div class="price">₹18,999 / night</div>
+          <p>Ultimate royal experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Hotel Signature • Premium Experience
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+      
